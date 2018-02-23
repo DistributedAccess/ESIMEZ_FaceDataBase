@@ -1,5 +1,6 @@
 from picamera import Picamera
 import Deteccion
+import Menu
 import os
 
 camera = Picamera()
@@ -37,3 +38,6 @@ def Ingresar_Nuevo():
     camera.start_preview()
 
 if __name__ == "__main__":
+
+    while(True):
+        Menu.Inicio()
